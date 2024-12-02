@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "point.h"
-#include "line.h"
 
 #ifndef UNTITLED_TRIANGLE_H
 #define UNTITLED_TRIANGLE_H
