@@ -1,12 +1,10 @@
-#include <iostream>
-#include <string>
+#ifndef UNTITLED_QUADRILATERAL_H
+#define UNTITLED_QUADRILATERAL_H
+
 #include "point.h"
 
-#ifndef UNTITLED_QUADRITERAL_H
-#define UNTITLED_QUADRITERAL_H
-
-class Quadriteral{
-    private:
+class Quadrilateral {
+private:
     Point a;
     Point b;
     Point c;
@@ -15,13 +13,13 @@ class Quadriteral{
     double calculateAngle(Point p1, Point p2, Point p3);
 
     double calculateTheta(Point a, Point b, Point c, Point d);
-    
-    public:
-    Quariteral(Point a, Point b, Point c, Point d);
 
-    Quadriteral(const Quadriteral &other);
+public:
+    Quadrilateral(Point a, Point b, Point c, Point d);
 
-    bool equals(Quadriteral &other);
+    Quadrilateral(const Quadrilateral &other);
+
+    bool equals(Quadrilateral &other);
 
     void flip();
 
@@ -30,5 +28,8 @@ class Quadriteral{
     std::string toString();
 
     double getSurface();
+
+};
+
 
 #endif
